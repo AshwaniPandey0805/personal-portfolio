@@ -39,6 +39,8 @@ import csharpLogo from './assets/tech_logo/csharp.png';
 import webverseLogo from './assets/company_logo/webverse_logo.png';
 import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import brainGridLogo from './assets/company_logo/braingrid_logo.png';
+import codeBrewLabsLogo from './assets/company_logo/code_Brew_labs_logo.png';
 
 // Education Section Logo's
 import glaLogo from './assets/education_logo/gla_logo.png';
@@ -116,62 +118,183 @@ export const SkillsInfo = [
   },
 ];
 
-  export const experiences = [
-    {
-      id: 0,
-      img: webverseLogo,
-      role: "Fullstack Developer",
-      company: "Webverse Digital",
-      date: "April 2024 - Present",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "TypeScript",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        "Redux",
-        " Next Js",
-      ],
-    },
-    {
-      id: 1,
-      img: agcLogo,
-      role: "Fullstack Engineer",
-      company: "Agumentik Group of Companies",
-      date: "July 2023 - March 2024",
-      desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "SQL",
-      ],
-    },
-    {
-      id: 2,
-      img: newtonschoolLogo,
-      role: "Frontend Intern",
-      company: "Newton School",
-      date: "September 2021 - August 2022",
-      desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-      skills: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Bootstrap",
-        "Figma",
-        "Material UI",
-      ],
-    },
-  ];
+  // export const experiences = [
+  //   {
+  //     id: 0,
+  //     img: webverseLogo,
+  //     role: "Fullstack Developer",
+  //     company: "Webverse Digital",
+  //     date: "April 2024 - Present",
+  //     desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+  //     skills: [
+  //       "HTML",
+  //       "CSS",
+  //       "JavaScript",
+  //       "React JS",
+  //       "TypeScript",
+  //       "Node JS",
+  //       "Tailwind CSS",
+  //       "MongoDb",
+  //       "Redux",
+  //       " Next Js",
+  //     ],
+  //   },
+  //   {
+  //     id: 1,
+  //     img: agcLogo,
+  //     role: "Fullstack Engineer",
+  //     company: "Agumentik Group of Companies",
+  //     date: "July 2023 - March 2024",
+  //     desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
+  //     skills: [
+  //       "ReactJS",
+  //       "Redux",
+  //       "JavaScript",
+  //       "Tailwind CSS",
+  //       "HTML",
+  //       "CSS",
+  //       "SQL",
+  //     ],
+  //   },
+  //   {
+  //     id: 2,
+  //     img: newtonschoolLogo,
+  //     role: "Frontend Intern",
+  //     company: "Newton School",
+  //     date: "September 2021 - August 2022",
+  //     desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
+  //     skills: [
+  //       "HTML",
+  //       "CSS",
+  //       "Javascript",
+  //       "Bootstrap",
+  //       "Figma",
+  //       "Material UI",
+  //     ],
+  //   },
+  // ];
   
+  // export const experiences = 
+  // [
+  //   {
+  //     id: 0,
+  //     img: brainGridLogo, // replace with your BrainGrid logo import
+  //     role: "Software Engineer",
+  //     company: "BrainGrid Technology Pvt. Ltd.",
+  //     date: "July 2024 - Present",
+  //     desc: "Working as a Software Engineer on enterprise-level web applications. Contributing to full stack development of scalable platforms using Laravel, Vue.js, Node.js, and React.js. Actively involved in building APIs, improving system performance, fixing critical bugs, and delivering new features based on client requirements.",
+  //     skills: [
+  //       "Laravel",
+  //       "Vue.js",
+  //       "Node.js",
+  //       "React.js",
+  //       "MySQL",
+  //       "MongoDB",
+  //       "REST APIs",
+  //       "Stripe",
+  //       "Socket.io",
+  //       "JavaScript",
+  //       "Bootstrap",
+  //       "Git"
+  //     ],
+  //   },
+  //   {
+  //     id: 1,
+  //     img: brainGridLogo, // same company, different project
+  //     role: "Full Stack Developer",
+  //     company: "BrainGrid Technology Pvt. Ltd.",
+  //     date: "July 2024 - Present",
+  //     desc: "Worked on Alert-Trax, a smart GPS/Wi-Fi/LTE-based asset tracking platform for trailers, construction equipment, boats, and other valuable assets. Developed backend APIs for authentication, geofencing, notifications, and Stripe subscription management. Enhanced frontend features to provide real-time tracking and improved user experience.",
+  //     skills: [
+  //       "Laravel",
+  //       "Vue.js",
+  //       "JavaScript",
+  //       "jQuery",
+  //       "Bootstrap",
+  //       "MySQL",
+  //       "Stripe API",
+  //       "REST APIs"
+  //     ],
+  //   },
+  //   {
+  //     id: 2,
+  //     img: brainGridLogo,
+  //     role: "Full Stack Developer",
+  //     company: "BrainGrid Technology Pvt. Ltd.",
+  //     date: "July 2024 - Present",
+  //     desc: "Contributed to Loomz, an HRM and Project Management system. Developed and maintained modules for project assignment, tracking, and reporting. Implemented real-time chat functionality using Socket.io to enable seamless communication between project managers and team members. Fixed bugs across multiple modules to improve system reliability.",
+  //     skills: [
+  //       "Node.js",
+  //       "React.js",
+  //       "MongoDB",
+  //       "Socket.io",
+  //       "JavaScript",
+  //       "REST APIs"
+  //     ],
+  //   },
+  //   {
+  //     id: 3,
+  //     img: '#', // replace with Code Brew Labs logo
+  //     role: "Software Developer Intern",
+  //     company: "Code Brew Labs",
+  //     date: "Dec 2023 - July 2024",
+  //     desc: "Worked as a Software Developer Intern providing backend support and API integration for live projects. Resolved bugs, improved application stability, and integrated third-party services including payment gateways. Implemented AWS S3 for secure media storage while following Laravel MVC architecture and best practices.",
+  //     skills: [
+  //       "PHP",
+  //       "Laravel",
+  //       "REST APIs",
+  //       "MySQL",
+  //       "AWS S3",
+  //       "Git",
+  //       "MVC Architecture"
+  //     ],
+  //   },
+  // ];
+
+  export const experiences = [
+  {
+    id: 0,
+    img: brainGridLogo,
+    role: "Full Stack Developer",
+    company: "BrainGrid Technology Pvt. Ltd.",
+    date: "July 2024 - Present",
+    desc: "Working as a Full Stack Developer on multiple enterprise and product-based applications. Involved in building and maintaining scalable backend systems, developing REST APIs, implementing real-time features, and enhancing frontend functionality. Contributed to various technology-driven projects including asset tracking systems, HRM platforms, and project management tools while fixing critical bugs and improving overall system performance.",
+    skills: [
+      "Laravel",
+      "Vue.js",
+      "Node.js",
+      "React.js",
+      "JavaScript",
+      "MySQL",
+      "MongoDB",
+      "REST APIs",
+      "Socket.io",
+      "Stripe",
+      "Bootstrap",
+      "Git"
+    ],
+  },
+  {
+    id: 1,
+    img: codeBrewLabsLogo,
+    role: "Software Developer Intern",
+    company: "Code Brew Labs",
+    date: "Dec 2023 - July 2024",
+    desc: "Worked as a Software Developer Intern providing backend development support and API integration for live projects. Fixed bugs, improved application stability, and integrated third-party services including payment gateways. Implemented AWS S3 for secure media storage while following Laravel MVC architecture and best practices.",
+    skills: [
+      "PHP",
+      "Laravel",
+      "REST APIs",
+      "MySQL",
+      "AWS S3",
+      "Git",
+      "MVC Architecture"
+    ],
+  },
+];
+
+
+
   export const education = [
     {
       id: 0,
